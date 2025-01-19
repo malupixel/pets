@@ -106,6 +106,7 @@ RUN echo 'alias codecept="vendor/codeception/codeception/codecept"' >> ~/.bashrc
 RUN echo 'alias sf="php bin/console"' >> ~/.bashrc
 
 WORKDIR /var/www/sellingo
+USER 1000
 
 CMD ["php-fpm"]
 EXPOSE 9004
