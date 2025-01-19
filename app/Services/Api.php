@@ -20,12 +20,12 @@ final class Api
         $ch = curl_init();
 
         $options = [
-            CURLOPT_URL => $uri,              // Ustawienie URL
-            CURLOPT_RETURNTRANSFER => true,  // Zwracanie odpowiedzi jako string
-            CURLOPT_CUSTOMREQUEST => strtoupper($method), // Metoda HTTP
-            CURLOPT_TIMEOUT => 30,           // Czas oczekiwania na odpowiedź
+            CURLOPT_URL => $uri,
+            CURLOPT_RETURNTRANSFER => true,  //
+            CURLOPT_CUSTOMREQUEST => strtoupper($method),
+            CURLOPT_TIMEOUT => 30,
             CURLOPT_HTTPHEADER => [
-                'Content-Type: application/json', // Nagłówek żądania
+                'Content-Type: application/json',
                 'Accept: application/json',
             ],
             CURLOPT_SSL_VERIFYPEER => false,

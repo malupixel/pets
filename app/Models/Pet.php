@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace App\Models;
 
@@ -12,7 +13,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @method static create(array $all)
  * @method static whereIn(string $string, string[] $statuses)
  */
-class Pet extends Model
+final class Pet extends Model
 {
     protected $fillable = [
         'name',
